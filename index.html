@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PageImpact — Notebook Marketing & CSR Campaign</title>
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    :root{--accent:#111;--muted:#6b7280}
+    html{scroll-behavior:smooth}
+    body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+    .glass{backdrop-filter:saturate(120%) blur(10px);background:rgba(255,255,255,.6)}
+    .blob{filter:blur(40px);opacity:.25}
+    @keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-10px)}100%{transform:translateY(0)}}
+  </style>
+</head>
+<body class="bg-white text-black">
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/80 border-b border-gray-200 backdrop-filter backdrop-blur">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between">
+      <a href="#home" class="font-extrabold tracking-tight text-xl">PageImpact</a>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-gray-700">
+        <a href="#intro">Introduction</a>
+        <a href="#why">Why Notebooks</a>
+        <a href="#goal">Our Goal</a>
+        <a href="#partner">Why Partner</a>
+        <a href="#together">Work Together</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="hidden md:inline-flex px-4 py-2 rounded-full border border-black text-black hover:bg-black hover:text-white transition">Sponsor Now</a>
+      <button id="menuBtn" class="md:hidden p-2 border border-gray-300 rounded-lg" aria-label="Open menu">☰</button>
+    </div>
+    <div id="mobileNav" class="md:hidden hidden border-t border-gray-200 px-4 pb-4 text-sm">
+      <a href="#intro" class="block py-2">Introduction</a>
+      <a href="#why" class="block py-2">Why Notebooks</a>
+      <a href="#goal" class="block py-2">Our Goal</a>
+      <a href="#partner" class="block py-2">Why Partner</a>
+      <a href="#together" class="block py-2">Work Together</a>
+      <a href="#contact" class="block py-2">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute -top-24 -right-20 w-96 h-96 bg-gray-900 rounded-full blob animate-pulse"></div>
+    <div class="absolute -bottom-24 -left-20 w-[32rem] h-[32rem] bg-gray-300 rounded-full blob animate-pulse"></div>
+
+    <div class="max-w-7xl mx-auto px-6 pt-16 pb-10 lg:pt-24 lg:pb-20 grid lg:grid-cols-2 gap-10 items-center">
+      <div data-aos="fade-right">
+        <p class="uppercase tracking-widest text-xs text-gray-500">Marketing + CSR</p>
+        <h1 class="mt-3 text-4xl sm:text-5xl font-extrabold leading-tight">Free Notebook Distribution in Pune</h1>
+        <p class="mt-4 text-gray-600">We print your brand inside A4 notebooks and distribute them free to students who need them most. High‑impact visibility that does good.</p>
+        <div class="mt-6 flex items-center gap-3">
+          <a href="#contact" class="px-5 py-3 rounded-full bg-black text-white hover:bg-gray-900">Become a Partner</a>
+          <a href="#intro" class="px-5 py-3 rounded-full border border-gray-300 hover:border-black">Learn More</a>
+        </div>
+        <div class="mt-6 grid grid-cols-3 gap-4 text-center" data-aos="zoom-in">
+          <div class="glass rounded-2xl p-4"><p class="text-xs text-gray-500">Phase 1 Target</p><p class="text-2xl font-bold">1,000+</p><p class="text-xs text-gray-500">Notebooks</p></div>
+          <div class="glass rounded-2xl p-4"><p class="text-xs text-gray-500">Brand Partners</p><p class="text-2xl font-bold">10+</p><p class="text-xs text-gray-500">Companies</p></div>
+          <div class="glass rounded-2xl p-4"><p class="text-xs text-gray-500">Audience</p><p class="text-xl font-semibold">Pune Students</p></div>
+        </div>
+      </div>
+      <div class="relative" data-aos="fade-left">
+        <div class="absolute inset-0 -z-10" style="animation: floaty 6s ease-in-out infinite;"></div>
+        <img src="WhatsApp Image 2025-08-13 at 2.22.29 PM.jpeg" class="w-full rounded-3xl shadow-2xl" alt="Shrvan Bhanbhane — CEO, PageImpact"/>
+        <p class="mt-4 text-center font-semibold">Shrvan Bhanbhane — CEO, PageImpact</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section id="intro" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-extrabold" data-aos="fade-up">Introduction</h2>
+      <ul class="mt-6 grid md:grid-cols-2 gap-4 text-gray-700">
+        <li class="p-5 rounded-xl bg-white border" data-aos="fade-up" data-aos-delay="50">We are launching a notebook distribution project in Pune.</li>
+        <li class="p-5 rounded-xl bg-white border" data-aos="fade-up" data-aos-delay="100">Our aim: Help underprivileged school & college students with free A4 notebooks.</li>
+        <li class="p-5 rounded-xl bg-white border" data-aos="fade-up" data-aos-delay="150">Revenue comes from partner ads printed inside the notebooks.</li>
+        <li class="p-5 rounded-xl bg-white border" data-aos="fade-up" data-aos-delay="200">A win‑win: social good + business visibility.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- WHY NOTEBOOKS -->
+  <section id="why" class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-extrabold" data-aos="fade-up">Why Notebooks</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl border" data-aos="zoom-in">Students use notebooks daily for learning.</div>
+        <div class="p-6 rounded-2xl border" data-aos="zoom-in" data-aos-delay="75">Many low‑income families can’t afford regular supply.</div>
+        <div class="p-6 rounded-2xl border" data-aos="zoom-in" data-aos-delay="150">Providing notebooks directly supports education.</div>
+        <div class="p-6 rounded-2xl border" data-aos="zoom-in" data-aos-delay="225">Accessible and practical vs. digital devices.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR GOAL -->
+  <section id="goal" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-extrabold" data-aos="fade-up">Our Goal</h2>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl border bg-white" data-aos="flip-left">
+          <p class="text-sm text-gray-600">Distribution</p>
+          <p class="text-2xl font-bold">1,000+ notebooks (Phase 1)</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white" data-aos="flip-left" data-aos-delay="100">
+          <p class="text-sm text-gray-600">Audience</p>
+          <p class="text-2xl font-bold">School & College Students</p>
+        </div>
+        <div class="p-6 rounded-2xl border bg-white" data-aos="flip-left" data-aos-delay="200">
+          <p class="text-sm text-gray-600">Branding</p>
+          <p class="text-2xl font-bold">10+ partner companies</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY PARTNER -->
+  <section id="partner" class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-extrabold" data-aos="fade-up">Why Partner With Us?</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl border" data-aos="fade-right">Positive brand image among students, parents, teachers.</div>
+        <div class="p-6 rounded-2xl border" data-aos="fade-left">Direct engagement with the future generation.</div>
+        <div class="p-6 rounded-2xl border" data-aos="fade-right">Low‑cost, high‑impact marketing.</div>
+        <div class="p-6 rounded-2xl border" data-aos="fade-left">Be seen as a socially responsible brand.</div>
+        <div class="p-6 rounded-2xl border" data-aos="fade-right">Reach thousands of students & families.</div>
+        <div class="p-6 rounded-2xl border" data-aos="fade-left">High visibility over 3–6 months (notebook lifespan).</div>
+        <div class="p-6 rounded-2xl border" data-aos="fade-right">Build brand loyalty among future consumers.</div>
+        <div class="p-6 rounded-2xl border" data-aos="fade-left">Perfect CSR branding with low investment.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK TOGETHER STEPS -->
+  <section id="together" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-3xl font-extrabold" data-aos="fade-up">Let’s Work Together</h2>
+      <div class="mt-8 grid md:grid-cols-4 gap-6">
+        <div class="p-6 rounded-2xl border bg-white text-center" data-aos="zoom-in"><p class="text-5xl">1</p><p class="mt-2">🎓 Free, high‑quality notebooks to students.</p></div>
+        <div class="p-6 rounded-2xl border bg-white text-center" data-aos="zoom-in" data-aos-delay="75"><p class="text-5xl">2</p><p class="mt-2">📢 Long‑term brand exposure.</p></div>
+        <div class="p-6 rounded-2xl border bg-white text-center" data-aos="zoom-in" data-aos-delay="150"><p class="text-5xl">3</p><p class="mt-2">🤝 Goodwill & community trust.</p></div>
+        <div class="p-6 rounded-2xl border bg-white text-center" data-aos="zoom-in" data-aos-delay="225"><p class="text-5xl">4</p><p class="mt-2">💼 Cost‑effective CSR + advertising.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="rounded-3xl border p-8 lg:p-12">
+        <h2 class="text-3xl font-extrabold" data-aos="fade-up">Partner With PageImpact</h2>
+        <p class="mt-2 text-gray-600" data-aos="fade-up" data-aos-delay="75">Share your details — we’ll send the sponsorship deck & pricing.</p>
+        <form class="mt-6 grid md:grid-cols-2 gap-4" data-aos="fade-up" data-aos-delay="150">
+          <input class="w-full px-4 py-3 rounded-xl border focus:outline-none" placeholder="Company Name" required />
+          <input class="w-full px-4 py-3 rounded-xl border focus:outline-none" placeholder="Your Name" required />
+          <input type="email" class="w-full px-4 py-3 rounded-xl border focus:outline-none md:col-span-2" placeholder="Work Email" required />
+          <input class="w-full px-4 py-3 rounded-xl border focus:outline-none md:col-span-2" placeholder="Phone / WhatsApp" required />
+          <textarea rows="4" class="w-full px-4 py-3 rounded-xl border focus:outline-none md:col-span-2" placeholder="Message (optional)"></textarea>
+          <button class="md:col-span-2 px-6 py-3 rounded-full bg-black text-white hover:bg-gray-900">Request a Callback</button>
+        </form>
+        <p class="mt-4 text-sm text-gray-500">Prefer email? Write to <span class="font-semibold">hello@pageimpact.in</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (added #year element to fix error) -->
+  <footer class="py-10 text-center text-gray-500">
+    <p>© <span id="year"></span> PageImpact • Pune, India</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    // Mobile menu toggle (guarded)
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    if(menuBtn && mobileNav){
+      menuBtn.addEventListener('click', ()=> mobileNav.classList.toggle('hidden'));
+    }
+
+    // Fix: only set #year if it exists
+    const yearEl = document.getElementById('year');
+    if(yearEl){ yearEl.textContent = new Date().getFullYear(); }
+
+    // AOS & GSAP
+    AOS.init({ duration: 900, easing: 'ease-out-cubic', once: true });
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from('.glass', {y: 20, opacity: 0, duration: .6, stagger: .12, delay:.2});
+    gsap.to('#home img', { yPercent: -5, ease: 'none', scrollTrigger: { trigger: '#home', start: 'top top', end: 'bottom top', scrub: true }});
+    document.querySelectorAll('[data-aos]')?.forEach(el=>{
+      el.addEventListener('mouseenter', ()=>{ gsap.to(el,{y:-4,duration:.2})});
+      el.addEventListener('mouseleave', ()=>{ gsap.to(el,{y:0,duration:.2})});
+    });
+
+    // --- Smoke Tests (added) ---
+    (function runSmokeTests(){
+      const results = [];
+      const assert = (cond, msg)=>{results.push({Test: msg, Pass: !!cond}); if(!cond) console.error('TEST FAIL:', msg)};
+      assert(!!document.getElementById('year'), '#year exists in the DOM');
+      assert(!!menuBtn, '#menuBtn exists');
+      assert(!!mobileNav, '#mobileNav exists');
+      if(menuBtn && mobileNav){
+        const before = mobileNav.classList.contains('hidden');
+        menuBtn.click();
+        const toggled = mobileNav.classList.contains('hidden') !== before;
+        menuBtn.click(); // restore
+        assert(toggled, 'Mobile nav toggles on click');
+      }
+      console.table(results);
+    })();
+  </script>
+</body>
+</html>
